@@ -40,10 +40,12 @@ class App extends React.Component {
                    <div className='ui grid'>
                        <div className='ui row'>
                            <div className = 'ten wide column'>
-                   <VideoList onVideoSelect={this.onVideoSelect} videos={this.state.videos}/>
+                       <VideoDetail video={this.state.selectedvideo}/>
+
                    </div>
                    <div className='fifteen wide column'>
-                   <VideoDetail video={this.state.selectedvideo}/>
+                     <VideoList onVideoSelect={this.onVideoSelect} videos={this.state.videos}/>
+
                    </div>
                    </div>
                    </div>
