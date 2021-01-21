@@ -39,11 +39,11 @@ class App extends React.Component {
                    <SearchBar onSubmitted={this.onTermsubmit}/>
                    <div className='ui grid'>
                        <div className='ui row'>
-                           <div className = 'ten wide column'>
+                           <div className = 'sixteen wide column'>
                        <VideoDetail video={this.state.selectedvideo}/>
 
                    </div>
-                   <div className='fifteen wide column'>
+                   <div className='ten wide column'>
                      <VideoList onVideoSelect={this.onVideoSelect} videos={this.state.videos}/>
 
                    </div>
